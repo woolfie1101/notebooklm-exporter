@@ -1,0 +1,128 @@
+:root {
+  --primary-color: #1a73e8;
+  --secondary-color: #f1f3f4;
+  --text-color: #202124;
+  --error-color: #d93025;
+  --success-color: #188038;
+  --premium-color: #9c27b0;
+}
+
+body {
+  width: 300px;
+  padding: 16px;
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+header h1 {
+  font-size: 18px;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+header p {
+  font-size: 12px;
+  margin: 4px 0 0;
+  color: #5f6368;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  margin-bottom: 8px;
+}
+
+.btn .icon {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.btn.primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn.primary:hover {
+  background-color: #1557b0;
+}
+
+.btn.secondary {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.btn.secondary:hover {
+  background-color: #e8eaed;
+}
+
+.btn.upgrade {
+  background: linear-gradient(45deg, #9c27b0, #e91e63);
+  color: white;
+  margin-top: 8px;
+}
+
+.btn.upgrade:hover {
+  opacity: 0.9;
+}
+
+footer {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 12px;
+  font-size: 12px;
+  text-align: center;
+}
+
+#status-msg {
+  margin: 8px 0 0;
+  color: #5f6368;
+}
+
+.usage-info {
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background-color: #e0e0e0;
+  border-radius: 2px;
+  margin-top: 4px;
+  overflow: hidden;
+}
+
+#usage-bar {
+  height: 100%;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.premium-badge {
+  color: var(--premium-color);
+  font-weight: bold;
+  margin-top: 8px;
+  padding: 4px;
+  border: 1px solid var(--premium-color);
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.hidden {
+  display: none !important;
+}

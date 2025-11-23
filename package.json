@@ -1,0 +1,18 @@
+{
+  "name": "notebooklm-exporter",
+  "version": "1.0.0",
+  "description": "Export NotebookLM text content to PDF, TXT, and Markdown",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vite build -c vite.config.content.js",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
+    "turndown": "^7.1.2"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
