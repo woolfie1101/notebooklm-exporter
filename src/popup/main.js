@@ -42,4 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
     btnPdf.addEventListener('click', () => sendMessageToContentScript('EXPORT_PDF'));
     btnTxt.addEventListener('click', () => sendMessageToContentScript('EXPORT_TXT'));
     btnMd.addEventListener('click', () => sendMessageToContentScript('EXPORT_MD'));
+
+    document.getElementById('btn-donate').addEventListener('click', () => {
+        chrome.tabs.create({ url: 'https://buymeacoffee.com/woolfie1101' });
+    });
 });
